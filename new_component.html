@@ -14,10 +14,17 @@
     <script type="text/babel">
 
       class Welcome extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state ={
+            number:2
+          }
+        }
+
       render() {
         return (
             <div>
-              <h1>Hello, {this.props.name}!</h1>
+              <h1>Hello, {this.props.name}! You have been learning React for {this.state.number} weeks.</h1>
             </div>
           );
         }
